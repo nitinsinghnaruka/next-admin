@@ -14,7 +14,6 @@ const Home: FC = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <BaseLayout>
-      
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis
         quibusdam atque aliquid omnis est quidem nesciunt sint vitae sunt
         voluptatem. Porro repellat consequatur molestias et. Sed aspernatur
