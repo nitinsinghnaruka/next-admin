@@ -6,8 +6,8 @@ services:
     container_name: web
     restart: always
     volumes:
-      - ./:/app
-      - /app/node_modules
-      - /app/.next
+      - ./:/next-admin
+      - /next-admin/node_modules
+      - /next-admin/.next
     ports:
       - 3000:3000

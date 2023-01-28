@@ -1,24 +1,24 @@
 # Dockerfile
 
 # Use node alpine as it's a small node image
-FROM node:alpine
+FROM node
 
 # Create the directory on the node image 
 # where our Next.js app will live
-RUN mkdir -p /app
+RUN mkdir -p /next-admin
 
-# Set /app as the working directory
-WORKDIR /app
+# Set /next-admin as the working directory
+WORKDIR /next-admin
 
 # Copy package.json and package-lock.json
-# to the /app working directory
-COPY package*.json /app
+# to the /next-admin working directory
+COPY package*.json /next-admin/
 
-# Install dependencies in /app
+# Install dependencies in /next-admin
 RUN npm install
 
-# Copy the rest of our Next.js folder into /app
-COPY . /app
+# Copy the rest of our Next.js folder into /next-admin
+COPY . /next-admin
 
 # Ensure port 3000 is accessible to our system
 EXPOSE 3000
